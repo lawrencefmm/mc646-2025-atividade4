@@ -20,7 +20,7 @@ class TestFraudDetectionSystemMutation:
     def test_fraud_negative_amount(self):
         fds = FraudDetectionSystem()
         now = datetime.now()
-        current_transaction = Transaction(amount=-100.0, timestamp=now, location="São Paulo")
+        current_transaction = Transaction(amount=-100.0, timestamp=now, location="Sao Paulo")
         previous_transactions = []
         blacklisted_locations = []
         result = fds.check_for_fraud(

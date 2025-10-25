@@ -3,7 +3,6 @@ from src.fraud.FraudDetectionSystem import FraudDetectionSystem
 from src.fraud.Transaction import Transaction
 
 class TestFraudDetectionSystemMutation:
-    """Testes de mutação para FraudDetectionSystem."""
 
     def test_fraud_blacklisted_location(self):
         fds = FraudDetectionSystem()

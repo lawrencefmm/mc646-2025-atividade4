@@ -9,7 +9,6 @@ def booking_system():
 NOW = datetime(2025, 10, 15, 10, 0, 0)
 
 class TestFlightBookingSystemMutation:
-    """Testes de mutação para FlightBookingSystem."""
 
     def test_booking_zero_passengers(self, booking_system):
         departure_time = NOW + timedelta(days=1)

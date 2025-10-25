@@ -1,0 +1,39 @@
+<html><body><h1>src/flight/BookingResult.py</h1>Killed 4 out of 8 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 157</h3><pre>--- src/flight/BookingResult.py
++++ src/flight/BookingResult.py
+@@ -10,7 +10,7 @@
+ 
+     def __repr__(self):
+         """Retorna uma representação legível do objeto."""
+-        return (f"BookingResult(confirmation={self.confirmation}, "
++        return (f"XXBookingResult(confirmation={self.confirmation}, XX"
+                 f"total_price={self.total_price:.2f}, "
+                 f"refund_amount={self.refund_amount:.2f}, "
+                 f"points_used={self.points_used})")
+</pre><h3>Mutant 158</h3><pre>--- src/flight/BookingResult.py
++++ src/flight/BookingResult.py
+@@ -11,6 +11,6 @@
+     def __repr__(self):
+         """Retorna uma representação legível do objeto."""
+         return (f"BookingResult(confirmation={self.confirmation}, "
+-                f"total_price={self.total_price:.2f}, "
++                f"XXtotal_price={self.total_price:.2f}, XX"
+                 f"refund_amount={self.refund_amount:.2f}, "
+                 f"points_used={self.points_used})")
+</pre><h3>Mutant 159</h3><pre>--- src/flight/BookingResult.py
++++ src/flight/BookingResult.py
+@@ -12,5 +12,5 @@
+         """Retorna uma representação legível do objeto."""
+         return (f"BookingResult(confirmation={self.confirmation}, "
+                 f"total_price={self.total_price:.2f}, "
+-                f"refund_amount={self.refund_amount:.2f}, "
++                f"XXrefund_amount={self.refund_amount:.2f}, XX"
+                 f"points_used={self.points_used})")
+</pre><h3>Mutant 160</h3><pre>--- src/flight/BookingResult.py
++++ src/flight/BookingResult.py
+@@ -13,4 +13,4 @@
+         return (f"BookingResult(confirmation={self.confirmation}, "
+                 f"total_price={self.total_price:.2f}, "
+                 f"refund_amount={self.refund_amount:.2f}, "
+-                f"points_used={self.points_used})")
++                f"XXpoints_used={self.points_used})XX")
+</pre></body></html>

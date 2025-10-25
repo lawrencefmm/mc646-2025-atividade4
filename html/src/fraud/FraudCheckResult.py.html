@@ -1,0 +1,39 @@
+<html><body><h1>src/fraud/FraudCheckResult.py</h1>Killed 4 out of 8 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 145</h3><pre>--- src/fraud/FraudCheckResult.py
++++ src/fraud/FraudCheckResult.py
+@@ -8,7 +8,7 @@
+ 
+     def __repr__(self) -> str:
+         """Retorna uma representação legível do objeto."""
+-        return (f"FraudCheckResult(is_fraudulent={self.is_fraudulent}, "
++        return (f"XXFraudCheckResult(is_fraudulent={self.is_fraudulent}, XX"
+                 f"is_blocked={self.is_blocked}, "
+                 f"verification_required={self.verification_required}, "
+                 f"risk_score={self.risk_score})")
+</pre><h3>Mutant 146</h3><pre>--- src/fraud/FraudCheckResult.py
++++ src/fraud/FraudCheckResult.py
+@@ -9,6 +9,6 @@
+     def __repr__(self) -> str:
+         """Retorna uma representação legível do objeto."""
+         return (f"FraudCheckResult(is_fraudulent={self.is_fraudulent}, "
+-                f"is_blocked={self.is_blocked}, "
++                f"XXis_blocked={self.is_blocked}, XX"
+                 f"verification_required={self.verification_required}, "
+                 f"risk_score={self.risk_score})")
+</pre><h3>Mutant 147</h3><pre>--- src/fraud/FraudCheckResult.py
++++ src/fraud/FraudCheckResult.py
+@@ -10,5 +10,5 @@
+         """Retorna uma representação legível do objeto."""
+         return (f"FraudCheckResult(is_fraudulent={self.is_fraudulent}, "
+                 f"is_blocked={self.is_blocked}, "
+-                f"verification_required={self.verification_required}, "
++                f"XXverification_required={self.verification_required}, XX"
+                 f"risk_score={self.risk_score})")
+</pre><h3>Mutant 148</h3><pre>--- src/fraud/FraudCheckResult.py
++++ src/fraud/FraudCheckResult.py
+@@ -11,4 +11,4 @@
+         return (f"FraudCheckResult(is_fraudulent={self.is_fraudulent}, "
+                 f"is_blocked={self.is_blocked}, "
+                 f"verification_required={self.verification_required}, "
+-                f"risk_score={self.risk_score})")
++                f"XXrisk_score={self.risk_score})XX")
+</pre></body></html>
